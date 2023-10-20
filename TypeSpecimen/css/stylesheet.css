@@ -1,0 +1,433 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: repeat(1, 4fr);
+   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    gap: 1rem;
+   /* grid-template-areas:
+    "title-sum nav"
+    "chara-set" */
+}
+
+.title {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: bolder;
+    font-size: 75px;
+}
+
+.GOT {
+    position: relative;
+    left: 100px;
+}
+
+.summary {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 200;
+    font-size: 20px;
+    float: left;
+}
+
+.title, .summary {
+    grid-area: "title-sum";
+}
+
+.chara-set {
+    grid-area: "chara-set"; /* bad  */
+    grid-column: span 2;
+}
+
+nav {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: 50px;
+    position: absolute;
+    left: 1100px;
+    grid-area: "nav";
+    top: 20px;
+}
+
+.ABC-title {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 300;
+    font-size: 40px;
+   /* align-content: right; */
+    text-align: center; 
+}
+
+.ABC-title h4 {
+    font-size: 90px;
+}
+
+.amongus {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 300;
+    font-size: 15px;
+    top: -120px;
+    position: relative;
+}
+
+.capitals h5 {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    width: 550px;
+    text-align: right;
+    top: 150px;
+}
+
+.capitals {
+    height: 600px;
+    width: 600px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 1;
+    position: relative;
+    left: -150px;
+}
+
+.capitals:hover {
+    background-color: #8E66FF
+}
+
+.lowercase h5 {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    width: 500px;
+    text-align: left;
+    top: 150px;
+    font-kerning: normal;
+    left: 40px;
+}
+
+.lowercase {
+    height: 600px;
+    width: 600px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 2;
+    position: relative;
+    left: 1000px;
+    top: -750px;
+}
+
+.lowercase:hover {
+    background-color: #8E66FF
+}
+
+.lowercase {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: 40px;   
+}
+
+.numbers {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.numbers h5 {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: 90px;
+    color: white;
+    position: relative;
+    width: 350px;
+    text-align: center;
+    top: 50px;
+    font-kerning: normal;
+    left: 25px;
+}
+
+.numbers {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 1;
+    position: relative;
+    left: 300px;
+    top: -750px;
+}
+
+.numbers:hover {
+    background-color: #8E66FF
+}
+
+.etc h5 {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    width: 550px;
+    text-align: left;
+    top: 100px;
+    font-kerning: normal;
+    left: 60px;
+}
+
+.etc {
+    height: 450px;
+    width: 450px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 2;
+    position: relative;
+    left: 1000px;
+    top: -1100px;
+}
+
+.black-colors {
+    position: relative;
+    top: -1100px;
+}
+
+.etc:hover {
+    background-color: #8E66FF
+}
+
+a:link {
+    color: #8E66FF;
+}
+
+a:hover {
+    color: #291E47;
+}
+
+a:visited {
+    color: black;
+}
+
+li {
+    display: block;
+    padding: .5rem;
+}
+
+.spiderpitch, .carbonvoid {
+    font-family: 'Grenze Gotisch', serif;
+}
+
+.spiderpitch {
+    height: 650px;
+    width: 650px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 2;
+    position: relative;
+}
+
+.spiderpitch:hover{
+    background-color: white;
+    color: rgb(24, 24, 24);
+}
+
+.spiderpitch h2:hover {
+    color: black;
+}
+
+.spiderpitch h3:hover {
+   color: black;
+}
+
+.spider {
+    color: white;
+    left: 130px;
+    position: relative;
+    font-size: 170px;
+}
+
+.pitch {
+    color: white;
+    left: 40px;
+    top: -350px;
+    position: relative;
+    font-size: 200px;
+}
+
+.carbonvoid {
+    height: 550px;
+    width: 550px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 1;
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+}
+
+.carbon {
+    color: white;
+    left: 100px;
+    top: -150px;
+    position: relative;
+    font-size: 110px;
+}
+
+.void {
+    color: white;
+    left: 20px;
+    top: -400px;
+    position: relative;
+    font-size: 190px;
+}
+
+.carbonvoid:hover{
+    background-color: white;
+    color: rgb(24, 24, 24);
+}
+
+.carbonvoid h2:hover {
+    color: black;
+}
+
+.carbonvoid h3:hover {
+   color: black;
+}
+
+.information, .display {
+    font-family: 'Grenze Gotisch', serif;
+}
+
+/* .information h4 {
+    font-size: 40px;
+    font-weight: bolder;
+} */
+
+.display {
+    grid-column: span 2;
+    position: relative;
+    top: -950px;
+}
+
+.BOD {
+    grid-column: span 2;
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 300;
+    font-size: 70px;
+    text-align: center;
+}
+
+.bats {
+    float: left;
+    width: 400px;
+    font-size: 20px;
+}
+
+.poe {
+    text-align: center;
+    width: 400px;
+    position: relative;
+    left: 550px;
+    font-size: 70px;
+}
+
+.sig {
+    font-size: 25px;
+    position: relative;
+    top: -70px;
+    font-style: italic;
+}
+
+.torture {
+    float: right;
+    width: 400px;
+    font-size: 20px;
+    position: absolute;
+    top: 1000px;
+    left: 1000px;
+}
+
+.information {
+    grid-column: span 2;
+    position: relative;
+    top: -800px;
+}
+
+.info-title-one {
+    grid-column: span 2;
+    position: relative;
+    left: 465px;
+    font-size: 50px;
+}
+
+.date-one {
+    position: relative;
+    left: 500px;
+}
+
+.time-one {
+    position: relative;
+    left: 820px;
+    top: -40px;
+}
+
+.OCE-desc {
+    width: 700px;
+    text-align: center;
+    position: relative;
+    left: 350px;
+    font-weight: 200;
+}
+
+.DAED {
+    width: 300px;
+    font-weight: 200;
+    left: 470px;
+    position: absolute;
+    top: 60px;
+}
+
+.DA {
+    position: relative;
+    top: -20px;
+}
+
+.info-title-two {
+    font-size: 100px;
+}
+
+.date-two {
+    position: absolute;
+    left: 550px;
+    top: 30px;
+}
+
+.time-two {
+    position: absolute;
+    left: 470px;
+    top: 30px;
+}
+
+.addon {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 1;
+    position: relative;
+    left: -190px;
+}
+
+.alone {
+    height: 600px;
+    width: 600px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    grid-column: 2;
+    position: relative;
+    left: 1000px;
+    top: -550px;
+}
+.addon:hover {
+    background-color: #8E66FF
+}
+
+.alone:hover {
+    background-color: #8E66FF
+}
